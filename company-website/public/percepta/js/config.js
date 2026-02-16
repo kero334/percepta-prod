@@ -7,12 +7,15 @@ const PERCEPTA_CONFIG = {
 
     MAX_IMAGE_SIZE: 10 * 1024 * 1024, // 10MB
     MAX_IMAGE_DIMENSION: 1560,
-    JPEG_QUALITY: 0.85,
+    JPEG_QUALITY: 0.9, // 👈 رجعناها 0.9 زي ما طلبنا
 
+    // ✅ Endpoints الصحيحة
     VISION_ENDPOINT: 'https://vision.percepta.sbs/api/detect',
     REASON_ENDPOINT: 'https://analysis.percepta.sbs/api/reason',
     HEALTH_ENDPOINT: 'https://analysis.percepta.sbs/api/health',
-    REQUEST_TIMEOUT: 90000, // 90s — two parallel calls may take longer
+
+    // 👈 خليه 30 ثانية بس
+    REQUEST_TIMEOUT: 30000,
 
     ANALYSIS_MODES: {
         comprehensive: {
@@ -40,7 +43,6 @@ const PERCEPTA_CONFIG = {
 
     CATEGORY_MAP: {
         person: 'human',
-        // Vehicles / machinery
         car: 'machinery',
         truck: 'machinery',
         bus: 'machinery',
@@ -48,18 +50,15 @@ const PERCEPTA_CONFIG = {
         bicycle: 'machinery',
         train: 'machinery',
         boat: 'machinery',
-        // Objects that could be hazards
         knife: 'hazard',
         scissors: 'hazard',
         bottle: 'hazard',
-        // PPE-related / equipment
         backpack: 'equipment',
         handbag: 'equipment',
         umbrella: 'equipment',
         suitcase: 'equipment',
         'cell phone': 'equipment',
         laptop: 'equipment',
-        // Other construction-related
         chair: 'hazard',
         bench: 'hazard',
         'fire hydrant': 'equipment',
@@ -85,7 +84,6 @@ const PERCEPTA_CONFIG = {
         object: '#6366f1'
     },
 
-    // Risk level styling
     RISK_STYLES: {
         LOW: { bg: 'rgba(16, 185, 129, 0.2)', color: '#10b981', border: 'rgba(16, 185, 129, 0.3)', gradient: 'linear-gradient(90deg, #10b981, #059669)' },
         MEDIUM: { bg: 'rgba(245, 158, 11, 0.2)', color: '#f59e0b', border: 'rgba(245, 158, 11, 0.3)', gradient: 'linear-gradient(90deg, #f59e0b, #d97706)' },
