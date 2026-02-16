@@ -1,0 +1,41 @@
+Q: What is Percepta?
+A: Percepta is an AI-based industrial safety system designed to prevent workplace accidents before they occur. It analyzes visual data from existing surveillance cameras to identify unsafe interactions inside industrial environments.
+
+Q: What problem does Percepta solve?
+A: Most safety systems are reactive and focus on reporting violations after incidents happen. Percepta shifts safety from documentation to prevention by detecting high-risk situations early.
+
+Q: Who is Percepta built for?
+A: Percepta is designed for medium-sized industrial facilities, including manufacturing plants, warehouses, and logistics centers where human-machine interaction creates operational risk.
+
+Q: How does Percepta work?
+A: Percepta uses artificial intelligence to analyze relationships between workers, equipment, and restricted zones. When unsafe proximity or risky behavior is detected, the system generates structured alerts.
+
+Q: Does Percepta require new hardware?
+A: No. Percepta is designed to operate using existing surveillance camera infrastructure, reducing additional capital costs and simplifying integration.
+
+Q: How is Percepta different from traditional CCTV?
+A: Traditional CCTV records footage for later review. Percepta actively analyzes video feeds in order to detect risk patterns before incidents occur.
+
+Q: How is Percepta different from basic computer vision systems?
+A: Basic systems often detect objects or PPE compliance only. Percepta evaluates contextual relationships between people, machines, and operational zones to identify behavioral risk scenarios.
+
+Q: Does Percepta replace safety managers?
+A: No. Percepta functions as a decision-support tool. It assists supervisors by providing alerts and structured insights while keeping human oversight central.
+
+Q: What stage is Percepta currently in?
+A: Percepta is currently in the prototype stage. The system operates on controlled static image testing while progressing toward real-time implementation.
+
+Q: Is Percepta commercially deployed?
+A: Not yet. The focus remains on technical validation and controlled testing before structured market entry.
+
+Q: What value does Percepta provide to businesses?
+A: Percepta helps reduce injuries, prevent downtime, and strengthen operational continuity. It transforms passive surveillance into proactive safety intelligence.
+
+Q: How does Percepta create social impact?
+A: Workplace accidents affect workers, families, and communities. By preventing incidents, Percepta contributes to workforce stability and human protection.
+
+Q: Where is Percepta currently focused?
+A: Percepta initially focuses on industrial facilities in Egypt, with future expansion dependent on validation and scalability readiness.
+
+Q: What is Percepta’s long-term vision?
+A: Percepta aims to improve industrial safety standards through proactive risk intelligence, guided by the principle that human life cannot be replaced.

@@ -1,0 +1,58 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { motion } from "framer-motion";
+import { AlertTriangle, Factory, Warehouse, TrendingUp, CheckCircle, Clock, } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+export default function UseCase() {
+    const environments = [
+        {
+            icon: Factory,
+            title: "Indoor Manufacturing",
+            description: "Production lines with heavy machinery and moving equipment",
+        },
+        {
+            icon: Warehouse,
+            title: "Warehouses",
+            description: "Distribution centers with forklifts and material handling",
+        },
+        {
+            icon: Factory,
+            title: "Production Floors",
+            description: "Assembly areas with mixed human-machine operations",
+        },
+    ];
+    const equipmentExamples = [
+        "Forklifts and material handlers",
+        "Conveyor systems and automated lines",
+        "Press machines and heavy equipment",
+        "Robotic systems and automated vehicles",
+    ];
+    const metrics = [
+        {
+            icon: TrendingUp,
+            title: "Precision",
+            value: ">90%",
+            description: "Target detection accuracy",
+        },
+        {
+            icon: CheckCircle,
+            title: "Confirmation Rate",
+            value: "High",
+            description: "Human-verified alerts",
+        },
+        {
+            icon: Clock,
+            title: "Response Time",
+            value: "Near Real-Time",
+            description: "Millisecond detection to alert",
+        },
+    ];
+    return (_jsxs("div", { className: "min-h-screen flex flex-col", children: [_jsx(Navigation, {}), _jsxs("main", { className: "flex-1 pt-16", children: [_jsx("section", { className: "py-20 bg-gradient-to-br from-background via-destructive/5 to-accent/5", children: _jsx("div", { className: "max-w-4xl mx-auto px-4 sm:px-6 lg:px-8", children: _jsxs(motion.div, { initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.6 }, className: "text-center", children: [_jsxs("div", { className: "inline-flex items-center gap-2 bg-destructive/10 text-destructive px-4 py-2 rounded-full text-sm font-medium mb-6", children: [_jsx(AlertTriangle, { size: 16 }), _jsx("span", { children: "Priority Use Case" })] }), _jsx("h1", { className: "text-4xl md:text-5xl font-bold text-foreground mb-6", children: "Hazardous Proximity Detection" }), _jsx("p", { className: "text-xl text-muted-foreground", children: "H-PROX" })] }) }) }), _jsx("section", { className: "py-20 bg-background", children: _jsx("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", children: _jsxs("div", { className: "grid lg:grid-cols-2 gap-12 items-start", children: [_jsxs(motion.div, { initial: { opacity: 0, x: -20 }, whileInView: { opacity: 1, x: 0 }, viewport: { once: true }, transition: { duration: 0.6 }, children: [_jsx("h2", { className: "text-3xl font-bold text-foreground mb-6", children: "The Problem" }), _jsx(Card, { className: "border-destructive/30 bg-destructive/5", children: _jsxs(CardContent, { className: "p-8", children: [_jsx("p", { className: "text-lg text-foreground leading-relaxed mb-4", children: "Workers are frequently injured when entering unsafe proximity zones around moving or dangerous equipment." }), _jsx("p", { className: "text-muted-foreground leading-relaxed", children: "Traditional safety measures like floor markings, warning signs, and periodic training are not sufficient to prevent near-miss incidents in dynamic industrial environments where multiple hazards exist simultaneously." })] }) })] }), _jsxs(motion.div, { initial: { opacity: 0, x: 20 }, whileInView: { opacity: 1, x: 0 }, viewport: { once: true }, transition: { duration: 0.6 }, children: [_jsx("h2", { className: "text-3xl font-bold text-foreground mb-6", children: "Percepta's Solution" }), _jsx(Card, { className: "border-secondary/30 bg-secondary/5", children: _jsxs(CardContent, { className: "p-8", children: [_jsx("p", { className: "text-lg text-foreground leading-relaxed mb-4", children: "Detects when a worker approaches hazardous machinery, explains why the situation is unsafe, and recommends immediate corrective action." }), _jsxs("div", { className: "space-y-3 mt-6", children: [_jsxs("div", { className: "flex items-start gap-3", children: [_jsx(CheckCircle, { size: 20, className: "text-secondary mt-0.5 flex-shrink-0" }), _jsx("span", { className: "text-muted-foreground", children: "Real-time proximity monitoring" })] }), _jsxs("div", { className: "flex items-start gap-3", children: [_jsx(CheckCircle, { size: 20, className: "text-secondary mt-0.5 flex-shrink-0" }), _jsx("span", { className: "text-muted-foreground", children: "Contextual risk assessment" })] }), _jsxs("div", { className: "flex items-start gap-3", children: [_jsx(CheckCircle, { size: 20, className: "text-secondary mt-0.5 flex-shrink-0" }), _jsx("span", { className: "text-muted-foreground", children: "Actionable safety recommendations" })] })] })] }) })] })] }) }) }), _jsx("section", { className: "py-20 bg-muted/30", children: _jsxs("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", children: [_jsxs(motion.div, { initial: { opacity: 0, y: 20 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true }, transition: { duration: 0.6 }, className: "text-center mb-12", children: [_jsx("h2", { className: "text-3xl md:text-4xl font-bold text-foreground mb-4", children: "Target Environments" }), _jsx("p", { className: "text-lg text-muted-foreground", children: "Where H-PROX makes the biggest impact" })] }), _jsx("div", { className: "grid md:grid-cols-3 gap-8 mb-16", children: environments.map((env, index) => {
+                                        const Icon = env.icon;
+                                        return (_jsx(motion.div, { initial: { opacity: 0, y: 20 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true }, transition: { duration: 0.6, delay: index * 0.1 }, children: _jsx(Card, { className: "h-full hover:shadow-lg transition-shadow border-border", children: _jsxs(CardContent, { className: "p-8 text-center", children: [_jsx("div", { className: "text-primary mb-4 inline-flex p-4 rounded-xl bg-primary/5", children: _jsx(Icon, { size: 32 }) }), _jsx("h3", { className: "text-xl font-semibold text-foreground mb-3", children: env.title }), _jsx("p", { className: "text-muted-foreground", children: env.description })] }) }) }, env.title));
+                                    }) }), _jsx(motion.div, { initial: { opacity: 0, y: 20 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true }, transition: { duration: 0.6 }, className: "max-w-3xl mx-auto", children: _jsx(Card, { className: "border-border", children: _jsxs(CardContent, { className: "p-8", children: [_jsx("h3", { className: "text-2xl font-semibold text-foreground mb-6 text-center", children: "Equipment Examples" }), _jsx("div", { className: "grid sm:grid-cols-2 gap-4", children: equipmentExamples.map((example) => (_jsxs("div", { className: "flex items-start gap-3 text-muted-foreground", children: [_jsx("div", { className: "w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" }), _jsx("span", { children: example })] }, example))) })] }) }) })] }) }), _jsx("section", { className: "py-20 bg-background", children: _jsxs("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", children: [_jsxs(motion.div, { initial: { opacity: 0, y: 20 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true }, transition: { duration: 0.6 }, className: "text-center mb-12", children: [_jsx("h2", { className: "text-3xl md:text-4xl font-bold text-foreground mb-4", children: "Success Metrics" }), _jsx("p", { className: "text-lg text-muted-foreground", children: "How we measure H-PROX effectiveness" })] }), _jsx("div", { className: "grid md:grid-cols-3 gap-8", children: metrics.map((metric, index) => {
+                                        const Icon = metric.icon;
+                                        return (_jsx(motion.div, { initial: { opacity: 0, scale: 0.95 }, whileInView: { opacity: 1, scale: 1 }, viewport: { once: true }, transition: { duration: 0.6, delay: index * 0.1 }, children: _jsx(Card, { className: "h-full text-center border-border hover:border-primary/50 transition-colors", children: _jsxs(CardContent, { className: "p-8", children: [_jsx("div", { className: "text-secondary mb-4 inline-flex p-3 rounded-xl bg-secondary/10", children: _jsx(Icon, { size: 28 }) }), _jsx("h3", { className: "text-lg font-semibold text-foreground mb-2", children: metric.title }), _jsx("div", { className: "text-3xl font-bold text-primary mb-3", children: metric.value }), _jsx("p", { className: "text-sm text-muted-foreground", children: metric.description })] }) }) }, metric.title));
+                                    }) })] }) }), _jsx("section", { className: "py-20 bg-gradient-to-br from-primary/10 via-secondary/10 to-background", children: _jsx("div", { className: "max-w-4xl mx-auto px-4 sm:px-6 lg:px-8", children: _jsxs(motion.div, { initial: { opacity: 0, y: 20 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true }, transition: { duration: 0.6 }, className: "text-center", children: [_jsx("h2", { className: "text-3xl md:text-4xl font-bold text-foreground mb-6", children: "How It Works in Practice" }), _jsx("div", { className: "bg-card border border-border rounded-2xl p-8 text-left", children: _jsxs("div", { className: "space-y-6", children: [_jsxs("div", { className: "flex items-start gap-4", children: [_jsx("div", { className: "w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold flex-shrink-0", children: "1" }), _jsxs("div", { children: [_jsx("p", { className: "text-foreground font-medium mb-1", children: "Detection" }), _jsx("p", { className: "text-muted-foreground text-sm", children: "Camera system identifies worker approaching active forklift zone" })] })] }), _jsxs("div", { className: "flex items-start gap-4", children: [_jsx("div", { className: "w-8 h-8 rounded-full bg-secondary text-secondary-foreground flex items-center justify-center text-sm font-bold flex-shrink-0", children: "2" }), _jsxs("div", { children: [_jsx("p", { className: "text-foreground font-medium mb-1", children: "Analysis" }), _jsx("p", { className: "text-muted-foreground text-sm", children: "AI assesses proximity, equipment state, and trajectory to determine risk level" })] })] }), _jsxs("div", { className: "flex items-start gap-4", children: [_jsx("div", { className: "w-8 h-8 rounded-full bg-accent text-accent-foreground flex items-center justify-center text-sm font-bold flex-shrink-0", children: "3" }), _jsxs("div", { children: [_jsx("p", { className: "text-foreground font-medium mb-1", children: "Alert" }), _jsx("p", { className: "text-muted-foreground text-sm", children: "Supervisor receives notification: \"Worker #47 in Zone B - Immediate clearance recommended\"" })] })] }), _jsxs("div", { className: "flex items-start gap-4", children: [_jsx("div", { className: "w-8 h-8 rounded-full bg-muted text-foreground flex items-center justify-center text-sm font-bold flex-shrink-0", children: "4" }), _jsxs("div", { children: [_jsx("p", { className: "text-foreground font-medium mb-1", children: "Response" }), _jsx("p", { className: "text-muted-foreground text-sm", children: "Supervisor confirms alert and takes corrective action, system logs the event" })] })] })] }) })] }) }) })] }), _jsx(Footer, {})] }));
+}

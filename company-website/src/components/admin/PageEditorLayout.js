@@ -1,0 +1,8 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Link } from "react-router";
+import { ArrowLeft, Eye, Save } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+export default function PageEditorLayout({ pageName, pageUrl, onSave, isSaving = false, children, }) {
+    return (_jsxs("div", { className: "min-h-screen bg-background", children: [_jsx("div", { className: "border-b border-border bg-background sticky top-0 z-10", children: _jsx("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4", children: _jsxs("div", { className: "flex items-center justify-between", children: [_jsxs("div", { className: "flex items-center gap-4", children: [_jsx(Link, { to: "/admin/dashboard", children: _jsxs(Button, { variant: "ghost", size: "sm", children: [_jsx(ArrowLeft, { size: 16, className: "mr-2" }), "All Pages"] }) }), _jsx("div", { className: "h-6 w-px bg-border" }), _jsxs("h1", { className: "text-xl font-semibold text-foreground", children: ["Editing: ", pageName] })] }), _jsxs("div", { className: "flex items-center gap-3", children: [_jsx("a", { href: pageUrl, target: "_blank", rel: "noopener noreferrer", children: _jsxs(Button, { variant: "outline", size: "sm", children: [_jsx(Eye, { size: 16, className: "mr-2" }), "Preview Page"] }) }), _jsxs(Button, { onClick: onSave, disabled: isSaving, size: "sm", children: [_jsx(Save, { size: 16, className: "mr-2" }), isSaving ? "Saving..." : "Save Changes"] })] })] }) }) }), _jsx("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8", children: _jsx(motion.div, { initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.4 }, className: "space-y-6", children: children }) })] }));
+}

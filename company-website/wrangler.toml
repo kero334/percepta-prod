@@ -1,0 +1,3 @@
+name = "percepta-gemini"
+main = "workers/percepta-gemini.js"
+compatibility_date = "2026-02-16"
