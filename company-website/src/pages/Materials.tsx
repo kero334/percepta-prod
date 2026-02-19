@@ -22,15 +22,15 @@ export default function Materials() {
       description:
         "A guided walkthrough of the analyzer UI, image upload, detections, and Arabic report generation.",
       contentType: "video",
-      url: "https://drive.google.com/file/d/1XwmvXzNDj-MSSLH8J30zWZNZeTnQcDcq/view?usp=sharing",
+      url: "https://drive.google.com/file/d/12wKwtYw0AOMXE9LmM31z8_CSGbDpz3nK/preview",
     },
     {
       _id: "mat-3",
-      title: "Technical Deck (Presentation)",
+      title: "pitch Deck (Presentation)",
       description:
         "Slides covering detection calibration, proximity modeling, percent→pixel conversion validation, and UX constraints.",
       contentType: "presentation",
-      url: "https://docs.google.com/presentation/d/e/2PACX-1vSmo0YvOf5KGXlrt76IH2b2tG8XnlAkswExsSWAWaJZ-5ajE3twIaHfFGDOjHEB0Q/pub?start=true&loop=true&delayms=3000",
+      url: "https://docs.google.com/presentation/d/e/2PACX-1vRXZUJzDzpwc7VSzg2_ZcqduKVgEeSdRUDJ3t86Ykw8qxAD5svIHm1JyTnffwDeOw/pub?start=false&loop=false&delayms=3000",
     },
   ];
 
